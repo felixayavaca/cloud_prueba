@@ -1,0 +1,110 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Examen práctico de infraestructura tecnológica</title>
+  <style>
+    :root {
+      font-family: system-ui, sans-serif;
+      color: #17263e;
+      background: #f2f6fc;
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header { background: #13243e; }
+
+    nav, main {
+      width: min(68rem, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .35rem;
+      padding-block: .75rem;
+    }
+
+    nav a {
+      padding: .55rem .8rem;
+      border-radius: .5rem;
+      color: #e0ebff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a:hover, nav a[aria-current="page"] { background: #30486b; }
+    a:focus-visible { outline: .2rem solid #377de0; outline-offset: .2rem; }
+
+    main { padding-block: clamp(2rem, 7vw, 6rem); }
+
+    .hero {
+      padding: clamp(1.5rem, 6vw, 4.5rem);
+      border: 1px solid #d7e4f5;
+      border-radius: 1.25rem;
+      background: linear-gradient(135deg, #fff, #e2eeff);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+    }
+
+    p {
+      max-width: 38rem;
+      margin-block: 1rem 1.75rem;
+      color: #3b506e;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      line-height: 1.6;
+    }
+
+    .access {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+    }
+
+    .access a {
+      padding: .75rem 1rem;
+      border: 1px solid #174b95;
+      border-radius: .55rem;
+      background: #174b95;
+      color: #fff;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .access a + a { background: #fff; color: #174b95; }
+    .access a:hover { text-decoration: underline; }
+
+    @media (max-width: 30rem) {
+      .access a { flex: 1 1 100%; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegación principal">
+      <a href="./index.html" aria-current="page">Inicio</a>
+      <a href="./cloud_computing/index.html">Cloud Computing</a>
+      <a href="./conexion_remota/index.html">Conexión Remota</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="titulo">
+      <h1 id="titulo">Examen práctico</h1>
+      <p>Bienvenido al examen de Tecnología Superior en Administración de Infraestructura y Plataformas Tecnológicas.</p>
+      <div class="access">
+        <a href="./cloud_computing/index.html">Explorar Cloud Computing</a>
+        <a href="./conexion_remota/index.html">Explorar Conexión Remota</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
