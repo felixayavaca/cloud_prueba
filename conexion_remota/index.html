@@ -1,0 +1,114 @@
+<!-- conexion_remota/index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conexión Remota | Examen práctico</title>
+  <style>
+    :root {
+      font-family: system-ui, sans-serif;
+      color: #17263e;
+      background: #f2f6fc;
+    }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    header { background: #13243e; }
+
+    nav, main {
+      width: min(68rem, calc(100% - 2rem));
+      margin-inline: auto;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .35rem;
+      padding-block: .75rem;
+    }
+
+    nav a {
+      padding: .55rem .8rem;
+      border-radius: .5rem;
+      color: #e0ebff;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    nav a:hover, nav a[aria-current="page"] { background: #30486b; }
+    a:focus-visible { outline: .2rem solid #377de0; outline-offset: .2rem; }
+
+    main { padding-block: clamp(2rem, 6vw, 4rem); }
+
+    h1 {
+      margin: 0 0 1.5rem;
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1.1;
+      letter-spacing: -.04em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
+      gap: 1rem;
+    }
+
+    article {
+      padding: 1.5rem;
+      border: 1px solid #d7e4f5;
+      border-radius: 1rem;
+      background: #fff;
+    }
+
+    svg {
+      display: block;
+      width: 3.25rem;
+      height: 3.25rem;
+      padding: .55rem;
+      border-radius: .75rem;
+      background: #e2eeff;
+      fill: none;
+      stroke: #174b95;
+      stroke-width: 1.65;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    h2 { margin: 1rem 0 .45rem; font-size: 1.25rem; }
+    p { margin: 0; color: #3b506e; line-height: 1.6; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav aria-label="Navegación principal">
+      <a href="../index.html">Inicio</a>
+      <a href="../cloud_computing/index.html">Cloud Computing</a>
+      <a href="../conexion_remota/index.html" aria-current="page">Conexión Remota</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Conexión Remota</h1>
+
+    <div class="grid">
+      <article>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m2.5 12 5-5 5 5-5 5Zm9 0 5-5 5 5-5 5Z"/>
+        </svg>
+        <h2>AnyDesk</h2>
+        <p>Aplicación de escritorio remoto que permite ver y controlar otro equipo a través de internet para acceder a su escritorio o prestar asistencia técnica.</p>
+      </article>
+
+      <article>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="2.5" y="5.5" width="19" height="13" rx="2.5"/>
+          <path d="M6 12h12m-9-3-3 3 3 3m6-6 3 3-3 3"/>
+        </svg>
+        <h2>TeamViewer</h2>
+        <p>Herramienta de acceso y soporte remoto que permite controlar dispositivos, compartir pantalla y transferir archivos durante una sesión.</p>
+      </article>
+    </div>
+  </main>
+</body>
+</html>
